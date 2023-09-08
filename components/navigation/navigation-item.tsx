@@ -21,7 +21,7 @@ export const NavigationItem = ({
     const router = useRouter();
 
     const onClick = () => {
-        router.push(`/server/${id}`);
+        router.push(`/servers/${id}`);
     }
 
     return (
@@ -31,7 +31,7 @@ export const NavigationItem = ({
             label={name}
         >
             <button
-                onClick={() => { onClick }}
+                onClick={onClick}
                 className="group relative flex items-center"
             >
                 <div className={cn(
